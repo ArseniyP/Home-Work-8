@@ -1,0 +1,17 @@
+* {
+
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 30px 25px;
+}
+
+dd{
+    margin-left: 50px;
+}
+
+.pale{
+    color: #9d9d9b;
+}

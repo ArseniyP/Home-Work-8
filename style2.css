@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+ul {
+    margin: 10px 30px;
+    list-style-image: url(icons/unchecked_16.png);
+    list-style-position: inside;
+    
+}
+
+ul li{
+    background-color: #add9e6;
+    padding: 15px 30px 5px;
+    height: 30px;
+}
+
+ul li:nth-child(odd){
+    background-color: #a5ccdb;
+    
+}
+
+ul li.check {
+    list-style-image: url(icons/checked_16.png);
+    background-color: #e2e2e2;
+    text-decoration: line-through;
+}
+
+ul li::after {
+    content: "✖"; /*&#10006; не работает*/
+    margin-left: 25px;
+    color: red;
+    display: inline-block;
+    text-decoration: none; /*Почему-то переопределяется ul li.check*/
+}
+
+ul b{
+    font-size: 20px;
+    margin-bottom: 25px;
+    display: inline-block;
+}
